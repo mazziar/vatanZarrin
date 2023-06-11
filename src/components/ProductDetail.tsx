@@ -14,7 +14,7 @@ const ProductCard: FC<Props> = ({ product }) => {
             <div className="p-5 flex justify-center align-centerbg-white bg-white rounded-2xl w-40">
                 <Image
                     src={`${product.image}`}
-                    alt="Vercel Logo"
+                    alt={product.title.split(' ')[0]}
                     width={100}
                     height={100}
                     priority

@@ -19,7 +19,7 @@ const ProductCard: FC<Props> = ({ product }) => {
                     <div className="flex align-center">
                     <Image
                         src={`${product.image}`}
-                        alt="Vercel Logo"
+                        alt={product.title.split(' ')[0]}
                         className="align-center my-auto"
                         width={100}
                         height={100}
