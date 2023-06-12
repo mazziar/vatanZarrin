@@ -8,10 +8,10 @@ type Props = {
 }
 
 const ProductCard: FC<Props> = ({ product }) => {
-    return <div className="flex px-1 mb-1 h-500 grid text-center  lg:text-left" >
+    return <div className="flex px-2 mb-4 h-500 grid text-center  lg:text-left" >
         <Link
-            className="group  rounded-2xl h-100 border border-transparent p-4 
-            transition-colors hover:border-pink-300 hover:bg-gray-100 hover:dark:border-neutral-700 
+            className="group  rounded-2xl bg-gray-100 h-100 shadow border border-transparent p-4 
+            transition-colors hover:shadow-md hover:bg-gray-200 hover:dark:border-neutral-700 
             hover:dark:bg-neutral-800/30"
             href={`/commodity/${product.id}`}>
             <div className="flex h-full w-full"  >

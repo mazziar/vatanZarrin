@@ -10,7 +10,7 @@ type Props = {
 const ProductCard: FC<Props> = ({ product }) => {
     return <div className="flex mb-32 grid text-center xs:grid-cols-2 lg:text-left" >
 
-        <div className="flex h-full w-full"  >
+        <div className="flex h-full w-full rounded-2xl bg-gray-100  p-4"  >
             <div className="p-5 flex justify-center align-centerbg-white bg-white rounded-2xl w-40">
                 <Image
                     src={`${product.image}`}
